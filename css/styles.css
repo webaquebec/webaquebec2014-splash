@@ -1,0 +1,234 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/** Clearfix **/
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+/** Visuallyhidden **/
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/*******************************************/
+
+/** General Styles **/
+html, body{
+  min-width: 100%;
+  min-height: 100%;
+}
+
+body{
+  background-color: black;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-image: url('../img/bgbig.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+a:focus{
+  outline: 3px solid #3065b5;
+}
+
+/** Layout styles **/
+.page{
+  position: absolute;
+  top: 50%;
+  min-height: 400px;
+  margin-top: -200px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.content{
+  max-width: 890px;
+  margin: 0 auto;
+  padding: 0 35px 0 35px;
+}
+
+.dark{
+  background-color: rgb(0, 17, 37);
+  background-color: rgba(0, 17, 37, 0.85);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.shade{
+  background-color: rgb(0, 17, 37);
+  background-color: rgba(0, 17, 37, 0.4);
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+/** Content styles **/
+
+.infos{
+  float: left;
+  margin-left: 30px;
+}
+  h1{
+    margin-bottom: 15px;
+  }
+  
+  h1 img{
+    max-width: 100%;
+  }
+
+  h2, .date, .location{
+    font-family: misobold, sans-serif;
+    font-size: 2.250em;
+  }
+  .date, .location{
+    font-size: 3.000em;
+  }
+  
+  .social{
+    margin-top: 25px;
+  }
+  
+    .social li{
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      margin-right: 10px;
+    }
+    
+      .social li a{
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+      }
+      
+        .social li a:hover img{
+          opacity: 0.5;
+        }
+
+.eventbrite{
+  float: right;
+  max-width: 450px;
+  width: 100%;
+  margin-top: 47px;
+  position: relative;
+}
+
+  .jump-eventbrite.visuallyhidden.focusable:focus{
+    position: absolute;
+    top: -2.5em;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .tickets{
+    
+  }
+  
+.description{
+  text-align: center;
+  line-height: 1.2em;
+}
+
+
+/** Media queries **/
+@media (max-height: 400px) {
+  .page {
+    position: static;
+    margin-top: 0;
+    min-height: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .page {
+    position: static;
+    margin-top: 0;
+    min-height: 0;
+  }
+  
+  .content{
+    padding: 0 30px;
+  }
+  
+  .infos{
+    float: none;
+    margin-left: 0;
+  }
+  
+  .eventbrite{
+    float: none;
+    max-width: none;
+  }
+}
