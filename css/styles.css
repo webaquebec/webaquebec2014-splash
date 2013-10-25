@@ -113,7 +113,7 @@ a:focus{
 }
 
 .content{
-  max-width: 890px;
+  max-width: 1020px;
   margin: 0 auto;
   padding: 0 35px 0 35px;
 }
@@ -179,9 +179,9 @@ a:focus{
 
 .eventbrite{
   float: right;
-  max-width: 450px;
+  max-width: 550px;
   width: 100%;
-  margin-top: 47px;
+  margin-top: 20px;
   position: relative;
 }
 

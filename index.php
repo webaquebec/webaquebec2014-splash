@@ -45,7 +45,7 @@ header("Last-Modified: " . gmdate("D, d M Y H:i:s", $mtime) . " GMT");
     <div class="dark clearfix">
       <div class="content">
         <div class="infos">
-          <h1><img class="photo" src="img/waq-logo.png" alt="WAQ"></h1>
+          <h1><img class="photo" src="img/waq-logo.png" alt="WAQ"></a></h1>
           <h2 class="summary">Le Web à Québec</h2>
           <p class="date"><time class="dtstart" datetime="2014-03-19" title="2014-03-19">19</time> au <time class="dtend" datetime="2014-03-21" title="2014-03-21">21</time> mars</p>
           <p class="location">Espace 400e Bell</p>
@@ -58,7 +58,7 @@ header("Last-Modified: " . gmdate("D, d M Y H:i:s", $mtime) . " GMT");
         <div class="eventbrite">
           <!-- Billets semiaccessibles en commentaire -->
           <!--<a href="#tickets" class="jump-eventbrite visuallyhidden focusable" tabindex="0">Le contenu suivant n'est pas géré par ce site et n'est pas accessible. Cliquer pour sauter ce contenu</a>-->
-          <iframe src="https://www.eventbrite.ca/tickets-external?eid=8015888739&ref=etckt&v=2" frameborder="0" height="250" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+          <iframe src="https://www.eventbrite.ca/tickets-external?eid=8015888739&ref=etckt&v=1" frameborder="0" height="300" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
           <!--<h2 id="tickets" tabindex="0" class="visuallyhidden">Billets</h2>
           <span id="tickets" class="tickets visuallyhidden">
             <span class="hoffer">
