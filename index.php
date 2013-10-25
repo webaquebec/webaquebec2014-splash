@@ -3,23 +3,23 @@
 <head>
     <meta charset="utf-8">
     <title>Web à Québec - 19 au 21 mars 2014 à l'Espace 400e Bell</title>
-    
+
     <meta name="viewport" content="width=device-width, user-scalable=false;">
-    
+
     <meta property="og:image" content="<?php echo 'http://'.$_SERVER['HTTP_HOST']; ?>/img/fb-share-img.jpg"/>
     <meta property="og:title" content="Web à Québec - 19 au 21 mars 2014 à l'Espace 400e Bell"/>
-    <meta property="og:site_name" content="Web à Québec" /> 
+    <meta property="og:site_name" content="Web à Québec" />
     <meta property="og:url" content="<?php echo 'http://'.$_SERVER['HTTP_HOST']; ?>"/>
     <meta property="og:description" content="Le Web à Québec c'est trois jours de rencontres par et pour les gens qui imaginent le web." />
     <meta property="og:type" content="website">
-    
+
     <meta name="description" content="Le Web à Québec c'est trois jours de rencontres par et pour les gens qui imaginent le web.">
     <meta name="author" content="Libéo - http://www.libeo.com">
     <meta name="image_src" content="<?php echo 'http://'.$_SERVER['HTTP_HOST']; ?>/img/fb-share-img.jpg">
-    
-    <link rel="icon" href="img/waq-favicon.ico" type="image/x-icon"> 
-    <link rel="shortcut icon" href="img/waq-favicon.ico" type="image/x-icon"> 
-    
+
+    <link rel="icon" href="img/waq-favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/waq-favicon.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="css/fonts/miso_bold/stylesheet.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/styles.css">
@@ -51,7 +51,7 @@
           <!--<h2 id="tickets" tabindex="0" class="visuallyhidden">Billets</h2>
           <span id="tickets" class="tickets visuallyhidden">
             <span class="hoffer">
-              <a href="http://webaquebec2014.eventbrite.com/" class="offerurl">Tarif réserve-tôt</a> 
+              <a href="http://webaquebec2014.eventbrite.com/" class="offerurl">Tarif réserve-tôt</a>
               <span class="price">$385,00</span> jusqu'au <span class="pricevaliduntil">31 oct. 2013</span>
             </span>
           </span>-->
