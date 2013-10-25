@@ -201,6 +201,8 @@ a:focus{
   line-height: 1.2em;
 }
 
+.eventbrite-button { display: none; }
+
 
 /** Media queries **/
 @media (max-height: 400px) {
@@ -211,6 +213,19 @@ a:focus{
   }
 }
 
+@media (max-width: 1040px) {
+  .infos {
+    width: 335px;
+    margin: 0 auto;
+    float: none;
+  }
+
+  .eventbrite {
+    margin: 47px auto 0 auto;
+    float: none;
+  }
+}
+
 @media (max-width: 800px) {
   .page {
     position: static;
@@ -218,17 +233,18 @@ a:focus{
     min-height: 0;
   }
 
-  .content{
+  .content {
     padding: 0 30px;
-  }
-
-  .infos{
-    float: none;
-    margin-left: 0;
-  }
-
-  .eventbrite{
-    float: none;
     max-width: none;
   }
+}
+
+@media (max-width: 600px) {
+  .infos {
+    width: 335px;
+    margin: 0 auto;
+    float: none;
+  }
+  .eventbrite-button { display: block; }
+  .eventbrite iframe { display: none; }
 }
