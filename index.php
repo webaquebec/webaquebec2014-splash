@@ -1,3 +1,14 @@
+<?php
+date_default_timezone_set('America/Montreal');
+$mtime = filemtime(__FILE__);
+if (isset($_SERVER['HTTP_IF_MODIFIED_SINCE'])
+  && strtotime($_SERVER['HTTP_IF_MODIFIED_SINCE']) >= $mtime)
+{
+    header('HTTP/1.0 304 Not Modified');
+    exit;
+}
+header("Last-Modified: " . gmdate("D, d M Y H:i:s", $mtime) . " GMT");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
