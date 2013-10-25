@@ -248,3 +248,7 @@ a:focus{
   .eventbrite-button { display: block; }
   .eventbrite iframe { display: none; }
 }
+
+@media (max-width: 400px) {
+  .infos { width: 100%; }
+}
