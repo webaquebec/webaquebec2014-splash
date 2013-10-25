@@ -57,15 +57,15 @@ header("Last-Modified: " . gmdate("D, d M Y H:i:s", $mtime) . " GMT");
         </div>
         <div class="eventbrite">
           <!-- Billets semiaccessibles en commentaire -->
-          <!--<a href="#tickets" class="jump-eventbrite visuallyhidden focusable" tabindex="0">Le contenu suivant n'est pas géré par ce site et n'est pas accessible. Cliquer pour sauter ce contenu</a>-->
+          <a href="#tickets" class="jump-eventbrite visuallyhidden focusable" tabindex="0">Le contenu suivant n'est pas géré par ce site et n'est pas accessible. Cliquer pour sauter ce contenu</a>
           <iframe src="https://www.eventbrite.ca/tickets-external?eid=8015888739&ref=etckt&v=1" frameborder="0" height="300" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
-          <!--<h2 id="tickets" tabindex="0" class="visuallyhidden">Billets</h2>
+          <h2 id="tickets" tabindex="0" class="visuallyhidden">Billets</h2>
           <span id="tickets" class="tickets visuallyhidden">
             <span class="hoffer">
               <a href="http://webaquebec2014.eventbrite.com/" class="offerurl">Tarif réserve-tôt</a>
               <span class="price">$385,00</span> jusqu'au <span class="pricevaliduntil">31 oct. 2013</span>
             </span>
-          </span>-->
+          </span>
         </div>
       </div>
     </div>
