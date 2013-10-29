@@ -15,7 +15,7 @@ header("Last-Modified: " . gmdate("D, d M Y H:i:s", $mtime) . " GMT");
     <meta charset="utf-8">
     <title>Web à Québec - 19 au 21 mars 2014 à l'Espace 400e Bell</title>
 
-    <meta name="viewport" content="width=device-width, user-scalable=false;">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
 
     <meta property="og:image" content="<?php echo 'http://'.$_SERVER['HTTP_HOST']; ?>/img/fb-share-img.jpg"/>
     <meta property="og:title" content="Web à Québec - 19 au 21 mars 2014 à l'Espace 400e Bell"/>
