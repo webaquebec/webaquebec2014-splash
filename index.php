@@ -83,7 +83,7 @@ header("Last-Modified: " . gmdate("D, d M Y H:i:s", $mtime) . " GMT");
     </div>
     <div class="shade">
       <div class="content">
-        <p class="description">Le Web à Québec est l’événement par et pour les gens de l’industrie du Web de Québec. Renouvelant sa formule à succès de présentation éclair par des talents locaux, l’événement accueillera à nouveau des invités internationaux inspirants qui vous entretiendrons sur les sujets et thèmes les plus actuels.</p>
+        <p class="description">Le Web à Québec est l’événement par et pour les gens de l’industrie du Web de Québec. Renouvelant sa formule à succès de présentation éclair par des talents locaux, l’événement accueillera à nouveau des invités internationaux inspirants qui vous entretiendront sur les sujets et thèmes les plus actuels.</p>
       </div>
     </div>
   </div>
