@@ -8,6 +8,7 @@ if (isset($_SERVER['HTTP_IF_MODIFIED_SINCE'])
     exit;
 }
 header("Last-Modified: " . gmdate("D, d M Y H:i:s", $mtime) . " GMT");
+header("Cache-Control: s-maxage=157680000");
 ?>
 <!DOCTYPE html>
 <html lang="en">
