@@ -1,15 +1,3 @@
-<?php
-date_default_timezone_set('America/Montreal');
-$mtime = filemtime(__FILE__);
-if (isset($_SERVER['HTTP_IF_MODIFIED_SINCE'])
-  && strtotime($_SERVER['HTTP_IF_MODIFIED_SINCE']) >= $mtime)
-{
-    header('HTTP/1.0 304 Not Modified');
-    exit;
-}
-header("Last-Modified: " . gmdate("D, d M Y H:i:s", $mtime) . " GMT");
-header("Cache-Control: s-maxage=157680000");
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,16 +6,16 @@ header("Cache-Control: s-maxage=157680000");
 
     <meta name="viewport" content="width=device-width,user-scalable=no">
 
-    <meta property="og:image" content="<?php echo 'http://'.$_SERVER['HTTP_HOST']; ?>/img/fb-share-img.jpg"/>
+    <meta property="og:image" content="/img/fb-share-img.jpg"/>
     <meta property="og:title" content="Web à Québec - 19 au 21 mars 2014 à l'Espace 400e Bell"/>
     <meta property="og:site_name" content="Web à Québec" />
-    <meta property="og:url" content="<?php echo 'http://'.$_SERVER['HTTP_HOST']; ?>"/>
+    <meta property="og:url" content=""/>
     <meta property="og:description" content="Le Web à Québec c'est trois jours de rencontres par et pour les gens qui imaginent le web." />
     <meta property="og:type" content="website">
 
     <meta name="description" content="Le Web à Québec c'est trois jours de rencontres par et pour les gens qui imaginent le web.">
     <meta name="author" content="Libéo - http://www.libeo.com">
-    <meta name="image_src" content="<?php echo 'http://'.$_SERVER['HTTP_HOST']; ?>/img/fb-share-img.jpg">
+    <meta name="image_src" content="/img/fb-share-img.jpg">
 
     <link rel="icon" href="img/waq-favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="img/waq-favicon.ico" type="image/x-icon">

@@ -4,7 +4,7 @@
 
 ## Quick start
 
-    php -S localhost:8000
+    open index.html
 
 ## Deployment
 
@@ -14,11 +14,7 @@ Setup :
 
 Deployment :
 
-    git push heroku master
-
-1. http://webaquebec2014-splash.herokuapp.com
-2. http://dmth3oox6f5uq.cloudfront.net
-3. http://www.webaquebec.org
+    git push origin gh-pages
 
 ## Credits
 
