@@ -101,6 +101,7 @@ body{
   background-attachment: fixed;
 }
 
+a { color: #cecece; }
 a:focus{
   outline: 3px solid #3065b5;
 }
@@ -108,7 +109,7 @@ a:focus{
 /** Layout styles **/
 .page{
   position: absolute;
-  top: 50%;
+  top: 30%;
   min-height: 400px;
   margin-top: -200px;
   width: 100%;
@@ -130,11 +131,37 @@ a:focus{
   width: 100%;
 }
 
-.shade{
+.shade {
   background-color: rgb(0, 17, 37);
   background-color: rgba(0, 17, 37, 0.4);
   padding: 15px 0;
   margin-top: 20px;
+  letter-spacing: -0.31em;
+  word-spacing: -0.43em;
+
+  .shade-wrap {
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+
+  .share-part {
+    float: left;
+    width: 50%;
+    letter-spacing: normal;
+    word-spacing: normal;
+  }
+
+  p {
+    line-height: 20px;
+  }
+
+  h2, p { margin-bottom: 20px; }
+
+  &:after {
+    clear: both;
+    content: "";
+    display: block;
+  }
 }
 
 /** Content styles **/
@@ -180,31 +207,21 @@ a:focus{
           opacity: 0.5;
         }
 
-.eventbrite{
+.details {
   float: right;
   max-width: 550px;
   width: 100%;
   margin-top: 20px;
   position: relative;
+
+  p { line-height: 20px; }
+  h2, p { margin-bottom: 20px; }
 }
 
-  .jump-eventbrite.visuallyhidden.focusable:focus{
-    position: absolute;
-    top: -2.5em;
-    color: white;
-    text-decoration: none;
-  }
-
-  .tickets{
-
-  }
-
-.description{
+.description {
   text-align: center;
   line-height: 1.2em;
 }
-
-.eventbrite-button { display: none; }
 
 
 /** Media queries **/
@@ -219,12 +236,11 @@ a:focus{
 @media (max-width: 1040px) {
   .infos {
     width: 335px;
-    margin: 0 auto;
     float: none;
   }
 
-  .eventbrite {
-    margin: 47px auto 0 auto;
+  .details {
+    margin: 47px 0 0 30px;
     float: none;
   }
 }
@@ -245,11 +261,10 @@ a:focus{
 @media (max-width: 600px) {
   .infos {
     width: 335px;
-    margin: 0 auto;
     float: none;
   }
-  .eventbrite-button { display: block; }
-  .eventbrite iframe { display: none; }
+  .details-button { display: block; }
+  .details iframe { display: none; }
 }
 
 @media (max-width: 400px) {
