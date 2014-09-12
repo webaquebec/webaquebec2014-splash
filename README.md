@@ -4,7 +4,9 @@
 
 ## Quick start
 
-    open index.html
+    bundle install
+    bundle exec jekyll serve --watch
+    open http://localhost:4000/
 
 ## Deployment
 
